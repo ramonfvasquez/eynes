@@ -181,5 +181,24 @@ def consecutivos_por_columna(matriz):
     return consecutivos
 
 
+def main():
+    matriz = crear_matriz()
+
+    print("MATRIZ:")
+    for fila in matriz:
+        print(fila)
+
+    print()
+
+    print("CONSECUTIVOS POR FILA:")
+    print(consecutivos_por_fila(matriz))
+
+    print()
+
+    print("CONSECUTIVOS POR COLUMNA:")
+    print(consecutivos_por_columna(matriz))
+
+
 if __name__ == "__main__":
+    main()
     doctest.testmod()
