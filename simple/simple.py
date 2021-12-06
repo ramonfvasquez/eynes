@@ -60,5 +60,19 @@ def ordenar_mayor_a_menor(lista):
     return ordenada
 
 
+def main():
+    lista = dict_list()
+
+    for item in lista:
+        print(item)
+
+    print("\nORDENADA DE MAYOR A MENOR:")
+
+    ordenada = ordenar_mayor_a_menor(lista)
+    for item in ordenada:
+        print(item)
+
+
 if __name__ == "__main__":
+    main()
     doctest.testmod()
